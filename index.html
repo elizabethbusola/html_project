@@ -3,82 +3,148 @@
 <head>
 	<title>Cloning google page</title>
 	<style type="text/css">
-	body{
-		margin:0;
-		padding:0;
-		background-color:white; 
-	}
-	.search{
+		body{
+			margin:0;
+			padding:0;
+			background-color:white; 
+			box-sizing: border-box;
+		}
+		.container{
+			width: 100%;	
+		}
+		.check{
+			top: -200px;
+			position: relative;
+		}
+		.para{
+			font-size:100px;
+			position: relative;
+			bottom:-300px;
+		}
+		.search{
 		
-		width:50%;
-		height: 35px;
-		border: 2px solid lightgray;
-		margin-top: 250px;
+			width:50%;
+			height: 35px;
+			border: 2px solid rgb(240, 240, 240);
+			margin-top: 250px;
+		}
+		.button li{
+			display: inline-block;
+			color: gray;
+			background-color: rgb(240, 240, 240);
+		}
+		.button li a:hover{
+			background-color: white;
+			color:black;
+		}
+		.button li a {
+			color:gray;
 		}
 
-		.container{
-			width: 100%;
-			height: 575px;
+		.nav1  li{
+			display: inline-block;
+			
+			
 		}
+		.nav2  li{
+			display: inline-block;
+			 padding:3px, 0, 3px; 
+			
+		}
+		.nav2 a{
+			color:gray;
+		}
+		.nav1 li:hover{
+			text-decoration: underline;
+		
+		}
+		.nav2 li:hover{
+			text-decoration: underline;
+		
+		}
+		
+	
 		.footer{
 			width: 100%;
-			height:75px;
+			height:60px;
+			position: fixed;
+			bottom: 30px;
+			color:gray;
+			
 		}
-		.foot1{
+		 .foot1{
 			width:100%;
 			border:1px solid lightgray;
-			height: 37.5px;
+			height: 30px;
 			padding: 5px;
+			background-color: rgb(240, 240, 240);
 
+		
 		}
 		.foot2{
 			width: 100%;
 			border:1px solid lightgray;
-			height: 37.5px;
+			height: 30px;
 			padding: 5px;
+			background-color: rgb(240, 240, 240);
 		}
+
 		a{
+			
 			text-decoration: none;
+			
+		}
+		
+	ul li{
+			list-style-type: none;
 		}
 		p{
-			color:gray;
+			color:blue;
 		}
+		
+		form{
+			margin-top: 150px;
+		}
+		
+		
 
 	</style>
 </head>
 <body>
 	<div class="container">
+	<div class="check">
 	<form align="center">
+		<p class="para">Google</p>
 		<input class="search" type="" name="">
 	</form>
-	<table align="center" class="button">
-		<tr>
-		<td class="click"><a href="#" style="color: gray;">Google Search</a></td>
-		<td class="click"><a href="#" style="color: gray;">I'm feeling lucky</a></td>
-		</tr>	
-	</table>
-	<table align ="center" width="30%">
-		<tr>
-		<td><p>Google offered in:</p></td>
-		<td class="nav"><a href="#" style="color: blue;">Hausa</a></td>
-		<td class="nav"><a href="#" style="color: blue;">Igbo</a></td>
-		<td class="nav"><a href="#" style="color: blue;">Ede Yoruba</a></td>
-		<td class="nav"><a href="#" style="color: blue;">Nigerian Pidgin</a></td>
-		</tr>
-	</table>
-</div>
+	<div>
+		<ul align="center" class="button">
+		<span><li><a href="#">Google Search</a></li></span>
+		<span><li><a href="#">I'm feeling lucky</a></li></span>
+		</ul>	
+	</div>
+	<div>	
+
+		<ul align="center" class="nav1">
+		<li><p>Google offered in:</p></li>
+		<li><a href="#" style="color: blue;">Hausa</a></li>
+		<li><a href="#" style="color: blue;">Igbo</a></li>
+		<li><a href="#" style="color: blue;">Ede Yoruba</a></li>
+		<li><a href="#" style="color: blue;">Nigerian Pidgin</a><li>
+		</ul>
+	
+	</div>
+    </div>
 	<div class="footer">
 		<div class="foot1">
-			<p>Nigeria</p>
+			<p style="margin-left: 35px; color: gray">Nigeria</p>
 		</div>
 		<div class="foot2">
-		<table align ="left" width="20%">
-		<tr>
-		<td class="nav"><a href="#">Advertising</a></td>
-		<td class="nav"><a href="#">Business</a></td>
-		<td class="nav"><a href="#">About</a></td>
-		</tr>
-	</table>
+		<ul class="nav2">
+		<li><a href="#">Advertising</a></li>
+		<li><a href="#">Business</a></li>
+		<li><a href="#">About</a></li>
+		</ul>
 		</div>
 		
 	</div>
