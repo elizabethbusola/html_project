@@ -24,7 +24,7 @@ function search(){
 	console.log(fragment)
 	//document.body.appendChild(fragment);
 }
-
+//testing
 function search2(){
 	const fragment = document.createDocumentFragment()
 	for (let i = 1; i <= 5; i++) {
