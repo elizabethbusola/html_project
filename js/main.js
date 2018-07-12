@@ -21,7 +21,8 @@ function search(){
 	const form=document.getElementById("form")
 
 	form.appendChild(fragment)
-	console.log(fragment)
+	
+	//console.log(fragment)
 	//document.body.appendChild(fragment);
 }
 //testing
